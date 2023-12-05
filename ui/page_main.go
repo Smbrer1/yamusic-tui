@@ -24,24 +24,24 @@ var trackerHelpMap = trackerHelpKeyMap{
 		key.WithHelp("space", "play/pause"),
 	),
 	PrevTrack: key.NewBinding(
-		key.WithKeys("left"),
-		key.WithHelp("←", "previous track"),
+		key.WithKeys("d"),
+		key.WithHelp("d", "previous track"),
 	),
 	NextTrack: key.NewBinding(
-		key.WithKeys("right"),
-		key.WithHelp("→", "next track"),
+		key.WithKeys("u"),
+		key.WithHelp("u", "next track"),
 	),
 	LikeUnlike: key.NewBinding(
 		key.WithKeys("L"),
 		key.WithHelp("L", "like/unlike"),
 	),
 	Backward: key.NewBinding(
-		key.WithKeys("ctrl+left"),
-		key.WithHelp("ctrl+←", "-5 sec"),
+		key.WithKeys("ctrl+p"),
+		key.WithHelp("ctrl+p", "-5 sec"),
 	),
 	Forward: key.NewBinding(
-		key.WithKeys("ctrl+right"),
-		key.WithHelp("ctrl+→", "+5 sec"),
+		key.WithKeys("ctrl+n"),
+		key.WithHelp("ctrl+n", "+5 sec"),
 	),
 }
 

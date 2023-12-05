@@ -136,15 +136,15 @@ func Run(client *api.YaMusicClient) {
 	m.playlistList.SetShowStatusBar(false)
 	m.playlistList.Styles.Title = m.playlistList.Styles.Title.Foreground(accentColor).UnsetBackground().Padding(0)
 	m.playlistList.KeyMap = list.KeyMap{
-		CursorUp:   key.NewBinding(key.WithKeys("ctrl+up"), key.WithHelp("ctrl+↑", "up")),
-		CursorDown: key.NewBinding(key.WithKeys("ctrl+down"), key.WithHelp("ctrl+↓", "down")),
+		CursorUp:   key.NewBinding(key.WithKeys("ctrl+u"), key.WithHelp("ctrl+u", "up")),
+		CursorDown: key.NewBinding(key.WithKeys("ctrl+d"), key.WithHelp("ctrl+d", "down")),
 	}
 
 	m.trackList.Title = "Tracks"
 	m.trackList.Styles.Title = m.trackList.Styles.Title.Foreground(normalTextColor).UnsetBackground().Padding(0)
 	m.trackList.KeyMap = list.KeyMap{
-		CursorUp:     key.NewBinding(key.WithKeys("up"), key.WithHelp("↑", "up")),
-		CursorDown:   key.NewBinding(key.WithKeys("down"), key.WithHelp("↓", "down")),
+		CursorUp:     key.NewBinding(key.WithKeys("k"), key.WithHelp("k", "up")),
+		CursorDown:   key.NewBinding(key.WithKeys("j"), key.WithHelp("j", "down")),
 		Quit:         key.NewBinding(key.WithKeys(""), key.WithHelp("l", "like/unlike")),
 		Filter:       key.NewBinding(key.WithKeys(""), key.WithHelp("enter", "select")),
 		ShowFullHelp: key.NewBinding(key.WithKeys(""), key.WithHelp("ctrl+s", "share")),
